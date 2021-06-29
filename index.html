@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script> 
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <img src="images/pattern-circles.svg" alt="circles">
+    <h2>Simple, traffic-based pricing</h2>
+    <p>Sign-up for our 30-day trial. No credit card required.</p>
+  </header>
+
+  <div class="container" id="main">
+    <span class="views"><span class="number">100</span>k pageviews</span>
+    <div class="range-container">
+      <input type="range" id="range" min="4" max="32" class="slider" value="16" step="4">
+      <label for="range" class="change"><span>$</span>16<span class="choice">/month</span></label>
+    </div>
+    <div class="toggle-container">
+      
+      <input type="checkbox" id="monthly" class="toggle" checked>
+      <label for="monthly" class="label">
+        <div class="ball"></div>
+      </label>
+      <span class="label-item">Monthly Billing</span>
+    </div>
+    
+    <div class="toggle-container">
+      <input type="checkbox" id="yearly" class="toggle">
+      <label for="yearly" class="label">
+        <div class="ball"></div>
+      </label>
+      <span class="label-item">Yearly Billing<small class="discount">-25%</small></span>
+    </div>
+    <div class="line-container"></div>
+    <div class="start-container">
+      <div class="list-container">
+        <span><img src="images/icon-check.svg" alt="icon">Unlimited Websites</span>
+        <span><img src="images/icon-check.svg"  alt="icon">100% data ownership</span>
+        <span><img src="images/icon-check.svg"  alt="icon">Email reports</span>
+      </div>
+      <button class="btn">Start my Trial</button>
+    </div>
+  </div>
+  
+</body>
+</html>
